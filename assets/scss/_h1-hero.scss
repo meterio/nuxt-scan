@@ -63,71 +63,6 @@
             }
         }
     }
-    // Hero From
-    // form.search-box{
-    //     .input-form{
-    //         position: relative;
-    //         input{
-    //             height: 65px;
-    //             width: 100%;
-    //             color: #777777;
-    //             font-size: 18px;
-    //             font-weight: 400;
-    //             padding: 9px 33px 9px 76px;
-    //             border: none;
-    //             border-radius: 30px;
-    //             @media #{$xs}{
-    //                 margin-bottom: 20px;
-    //             }
-    //             @media #{$sm}{
-    //                 padding: 9px 33px 9px 71px;
-    //             }
-    //             &::placeholder {
-    //                 color: #616875;
-    //                 @media #{$xs}{
-    //                     font-size: 13px;
-                        
-    //                 }
-    //             }
-    //         }
-    //         // Search
-    //         .search-form{
-    //             position: absolute;
-    //             right: 9px;
-    //             top: 8px;
-    //             button{
-    //                 background: #FFBF81;
-    //                 text-align: center;
-    //                 color: #fff;
-    //                 font-size: 21px;
-    //                 border-radius: 50%;
-    //                 width: 50px;
-    //                 height: 50px;
-    //                 display: block;
-    //                 cursor: pointer;
-    //                 line-height: 52px;
-    //                 border: 0;
-    //             }
-    //             i{
-    //                 position: relative;
-    //                 left: 2px;
-    //                 top: 3px;
-    //             }
-    //         }
-    //         // World
-    //         .world-form{
-    //             position: absolute;
-    //             left: 21px;
-    //             top: 8px;
-    //             i{
-    //                 color: #c4c4c4;
-    //                 font-size: 32px;
-    //                 display: block;
-    //                 line-height: 50px;
-    //             }
-    //         }
-    //     }
-    // }
     
     // Domain List 
     .single-domain{
@@ -219,44 +154,4 @@
         background-repeat: no-repeat;
     }
 }
-
-
-// Transparent Header
-.header-transparent {
-    // position: absolute;
-    // top: 0;
-    // right: 0;
-    // left: 0;
-    // z-index: 9;
-}
-
-// Start Other Page Hero
-.hero-area2 {
-        background-image: url('~assets/img/hero/hero2.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 500px;
-        @media #{$sm}{
-            min-height: 400px;
-        }
-        @media #{$xs}{
-            min-height: 360px;
-        }
-    .hero-cap{
-        h2{
-            color: #fff;
-            font-size: 55px;
-            font-weight: 600;
-            text-transform: uppercase;
-            padding-top: 12px;
-            @media #{$sm}{
-                font-size: 43px;
-            }
-            @media #{$xs}{
-                font-size: 32px;
-            }
-        }
-    }
-}
-
 
