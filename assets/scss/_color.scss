@@ -1,0 +1,40 @@
+.white-bg {
+  background: #ffffff;
+}
+.gray-bg {
+  background: #f5f5f5;
+}
+
+/*-------------Color include--------------*/
+
+/*-- Background color---*/
+
+.gray-bg {
+  background: $gray;
+}
+.white-bg {
+  background: $white;
+}
+.black-bg {
+  background: $black;
+}
+.theme-bg {
+  background: $theme-color;
+}
+.brand-bg {
+  background: $brand-bg;
+}
+.testimonial-bg {
+  background: $testimonial-bg;
+}
+
+/*--- color------*/
+.white-color {
+  color: $white;
+}
+.black-color {
+  color: $black;
+}
+.theme-color {
+  color: $theme-color;
+}

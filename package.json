@@ -1,0 +1,21 @@
+{
+  "name": "nuxt-meter-explorer",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "start": "nuxt start"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.4",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "axios": "^0.21.1",
+    "nuxt": "^2.14.12"
+  },
+  "devDependencies": {
+    "@nuxtjs/dotenv": "^1.4.1",
+    "fibers": "^5.0.0",
+    "sass": "^1.32.0",
+    "sass-loader": "^10.1.0"
+  }
+}
