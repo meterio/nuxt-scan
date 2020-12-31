@@ -22,7 +22,8 @@ $theme-color3: #f27420;
 $theme-color4: #ff3500;
 
 // btn and Section color
-$btn_bg: #fa8f77;
+$btn_bg: $primary;
+$btn_hover: #1f2b7b;
 
 // Heading color
 $heading-color: #140c40;
@@ -30,7 +31,7 @@ $heading_color2: #080808;
 
 // Body font color
 $font_color1: #646d77;
-$border_color: #fdcb9e;
+$border_color: $gray-200;
 
 // Body Font
 $body-text-color: #646d77;

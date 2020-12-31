@@ -1,101 +1,159 @@
 <template>
-  <footer class="ftco-footer ftco-section">
+  <footer class="ftco-footer ftco-section mt-5">
     <div class="container">
-      <div class="row mb-5">
+      <div class="row">
         <div class="col-md">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">dirEngine</h2>
-            <p>
-              Far far away, behind the word mountains, far from the countries
-              Vokalia and Consonantia, there live the blind texts.
-            </p>
-            <ul
-              class="ftco-footer-social list-unstyled float-md-left float-lft mt-5"
-            >
-              <li class="ftco-animate">
-                <a href="#"><span><i class="fab fa-weixin"></i></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span><i class="fas fa-desktop"></i></span></a>
-              </li>
-              <li class="ftco-animate">
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-            </ul>
+            <img class="logo mb-3" src="~/assets/img/logo.png" alt="Meter" />
+            <p>Copyright 2019</p>
+            <p>Decentralized Finance Labs inc.</p>
+
+            <div class="wallet">
+            <p>Download meter wallet</p>
+            <a href="#" class="btn btn-lg btn-primary">
+              <i class="fas fa-desktop"></i>Desktop Wallet
+            </a>
+            </div>
+
           </div>
         </div>
+
         <div class="col-md">
-          <div class="ftco-footer-widget mb-4 ml-md-5">
-            <h2 class="ftco-heading-2">Information</h2>
-            <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">About</a></li>
-              <li><a href="#" class="py-2 d-block">Service</a></li>
-              <li><a href="#" class="py-2 d-block">Terms and Conditions</a></li>
-              <li><a href="#" class="py-2 d-block">Become a partner</a></li>
-              <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
-              <li><a href="#" class="py-2 d-block">Privacy and Policy</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Customer Support</h2>
-            <ul class="list-unstyled">
-              <li><a href="#" class="py-2 d-block">FAQ</a></li>
-              <li><a href="#" class="py-2 d-block">Payment Option</a></li>
-              <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
-              <li><a href="#" class="py-2 d-block">How it works</a></li>
-              <li><a href="#" class="py-2 d-block">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-md">
-          <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
-            <div class="block-23 mb-3">
-              <ul>
-                <li>
-                  <span class="icon icon-map-marker"></span
-                  ><span class="text"
-                    >203 Fake St. Mountain View, San Francisco, California,
-                    USA</span
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon icon-phone"></span
-                    ><span class="text">+2 392 3929 210</span></a
-                  >
-                </li>
-                <li>
-                  <a href="#"
-                    ><span class="icon icon-envelope"></span
-                    ><span class="text">info@yourdomain.com</span></a
-                  >
-                </li>
-              </ul>
+          <div class="row">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-5">
+                <ul class="list-unstyled">
+                  <li><NuxtLink to="/dashboard">Dashboard</NuxtLink></li>
+                  <li><NuxtLink to="/pow">Blockchain</NuxtLink></li>
+                  <li><NuxtLink to="/auction">Auction</NuxtLink></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-5">
+                <ul class="list-unstyled">
+                  <li><NuxtLink to="/dashboard">Dashboard</NuxtLink></li>
+                  <li><NuxtLink to="/pow">Blockchain</NuxtLink></li>
+                  <li><NuxtLink to="/auction">Auction</NuxtLink></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            All rights reserved | This template is made with
-            <i class="icon-heart" aria-hidden="true"></i> by
-            <a href="https://colorlib.com" target="_blank">Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-          </p>
+
+          <ul class="ftco-footer-social list-unstyled float-md-right">
+            <li>
+              <a href="#"
+                ><span><i class="fab fa-weixin"></i></span
+              ></a>
+            </li>
+            <li>
+              <a href="#"
+                ><span><i class="fab fa-twitter"></i></span
+              ></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><span><i class="fab fa-telegram"></i></span
+              ></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><span><i class="fab fa-discord"></i></span
+              ></a>
+            </li>
+
+            <li>
+              <a href="#"
+                ><span><i class="fab fa-medium"></i></span
+              ></a>
+            </li>
+
+             <li>
+              <a href="#"
+                ><span><i class="fab fa-youtube"></i></span
+              ></a>
+            </li>
+
+
+          </ul>
         </div>
       </div>
     </div>
   </footer>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+.ftco-footer {
+  font-size: 16px;
+  background: $white;
+  color: $black;
+  padding: 30px 0;
+  border-top: 1px solid $border_color;
+  .logo {
+    width: 120px;
+    height: auto;
+  }
+
+  .ftco-footer-widget {
+    ul {
+      li {
+        padding: 10px;
+        text-align: right;
+        a {
+          color: $font_color1;
+        }
+      }
+    }
+
+    .wallet {
+      padding-top: 16px;
+      p {
+        font-size: 14px;
+      }
+
+    .btn {
+      font-size: 18px;
+      padding: 15px 25px;
+      i {
+        font-size: 25px;
+        margin-right: 6px;
+      }
+    }
+    }
+
+  }
+
+  .ftco-heading-2 {
+    font-size: 17px;
+    font-weight: 400;
+    color: $black;
+  }
+}
+
+.ftco-footer-social {
+  text-align: right;
+
+  li {
+    list-style: none;
+    margin: 0 10px 0 0;
+    display: inline-block;
+    a {
+      height: 50px;
+      width: 50px;
+      display: block;
+      float: left;
+      border-radius: 50%;
+      position: relative;
+      span {
+        color: $font_color1;
+        position: absolute;
+        font-size: 26px;
+        top: 7px;
+        left: 10px;
+      }
+    }
+  }
+}
 </style>
