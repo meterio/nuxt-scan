@@ -14,9 +14,9 @@
                   <h1>Meter Blockchain Explorer</h1>
                 </div>
 
-                <div class="search-content">
+                <!-- <div class="search-content">
                   <SearchInput />
-                </div>
+                </div> -->
                
               </div>
             </div>
@@ -32,21 +32,16 @@
 </template>
 
 <script>
-import Header from "~/layouts/_header.vue";
-import Footer from "~/layouts/_footer.vue";
-import SearchInput from "~/components/SearchInput.vue";
+import Header from "~/layouts/header.vue";
+import Footer from "~/layouts/footer.vue";
+// import SearchInput from "~/components/SearchInput.vue";
 
 export default {
   components: {
     Header,
     Footer,
-    SearchInput
+    // SearchInput
   },
 };
 </script>
 
-<style lang="scss" scoped>
-  .search-content {
-    height: 65px;
-  }
-</style>

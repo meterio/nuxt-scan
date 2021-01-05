@@ -25,95 +25,82 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-form.search-box {
-  height: 100%;
+<style scoped>
+/* // form.search-box {
+//   height: 100%;
 
-  &.sm {
-    input {
-      border-radius: 10px !important;
-      font-size: 14px !important;
-      padding: 9px 15px !important;
-    }
+//   &.sm {
+//     input {
+//       border-radius: 10px !important;
+//       font-size: 14px !important;
+//       padding: 9px 15px !important;
+//     }
 
-    .search-form {
-      right: 5px !important;
-      top: 5px !important;
-      button {
-        font-size: 10px !important;
-        border-radius: 8px !important;
-        width: 30px !important;
-        height: 30px !important;
-      }
-      i {
-        position: relative;
-        left: 0;
-        top: 0;
-      }
-    }
-  }
+//     .search-form {
+//       right: 5px !important;
+//       top: 5px !important;
+//       button {
+//         font-size: 10px !important;
+//         border-radius: 8px !important;
+//         width: 30px !important;
+//         height: 30px !important;
+//       }
+//       i {
+//         position: relative;
+//         left: 0;
+//         top: 0;
+//       }
+//     }
+//   }
 
-  .input-form {
-    position: relative;
-    height: 100%;
-    input {
-      height: 100%;
-      width: 100%;
-      color: #777777;
-      font-size: 18px;
-      font-weight: 400;
-      padding: 9px 33px 9px 33px;
-      border: 1px solid $gray-400;
-      border-radius: 15px;
-      @media #{$xs} {
-        margin-bottom: 20px;
-      }
-      @media #{$sm} {
-        padding: 9px 33px 9px 33px;
-      }
-      &::placeholder {
-        color: #616875;
-        @media #{$xs} {
-          font-size: 13px;
-        }
-      }
-    }
-    // Search
-    .search-form {
-      position: absolute;
-      right: 9px;
-      top: 8px;
-      button {
-        background: $primary;
-        text-align: center;
-        color: #fff;
-        font-size: 25px;
-        border-radius: 15px;
-        width: 50px;
-        height: 50px;
-        display: block;
-        cursor: pointer;
-        border: 0;
-      }
-      i {
-        position: relative;
-        left: 0;
-        top: 0;
-      }
-    }
-
-    // World
-    // .world-form{
-    //     position: absolute;
-    //     left: 21px;
-    //     top: 8px;
-    //     i{
-    //         color: #c4c4c4;
-    //         font-size: 32px;
-    //         display: block;
-    //         line-height: 50px;
-    //     }
-    // }
-  }
-}
+//   .input-form {
+//     position: relative;
+//     height: 100%;
+//     input {
+//       height: 100%;
+//       width: 100%;
+//       color: #777777;
+//       font-size: 18px;
+//       font-weight: 400;
+//       padding: 9px 33px 9px 33px;
+//       border: 1px solid $gray-400;
+//       border-radius: 15px;
+//       @media #{$xs} {
+//         margin-bottom: 20px;
+//       }
+//       @media #{$sm} {
+//         padding: 9px 33px 9px 33px;
+//       }
+//       &::placeholder {
+//         color: #616875;
+//         @media #{$xs} {
+//           font-size: 13px;
+//         }
+//       }
+//     }
+//     // Search
+//     .search-form {
+//       position: absolute;
+//       right: 9px;
+//       top: 8px;
+//       button {
+//         background: $primary;
+//         text-align: center;
+//         color: #fff;
+//         font-size: 25px;
+//         border-radius: 15px;
+//         width: 50px;
+//         height: 50px;
+//         display: block;
+//         cursor: pointer;
+//         border: 0;
+//       }
+//       i {
+//         position: relative;
+//         left: 0;
+//         top: 0;
+//       }
+//     }
+//   }
+// } */
 </style>

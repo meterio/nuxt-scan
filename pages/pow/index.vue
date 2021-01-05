@@ -1,5 +1,5 @@
 <template>
     <div>
-  <h1>blocks</h1>
+  <h1>pow</h1>
   </div>
 </template>
