@@ -11,13 +11,13 @@
             >
               <img class="h-10 p2" src="~/assets/img/logo.png" />
             </a>
-            <p class="text-sm text-gray-500 sm:mt-0 mt-4">
+            <p class="text-sm text-gray-500 mt-4">
               © 2019 Decentralized Finance Labs inc.
             </p>
 
-            <p class="text-indigo-600">Dowanload Meter Wallet</p>
+            <p class="text-indigo-600 mt-4">Dowanload Meter Wallet</p>
             <button
-              class="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+              class="mt-2 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
             >
               Desktop Wallet
             </button>

@@ -4,7 +4,7 @@ export default {
   modules: ["@nuxtjs/style-resources"],
   buildModules: ["@nuxtjs/tailwindcss"],
   router: {
-    linkActiveClass: "text-gray-900",
+    linkActiveClass: "text-indigo-700",
   },
 };
 //     styleResources: {

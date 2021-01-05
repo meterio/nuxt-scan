@@ -3,30 +3,17 @@
     <Header />
 
     <main>
-      <!-- Hero Area Start-->
-      <div class="slider-area">
-        <div class="single-slider slider-height d-flex align-items-center">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-xl-8 col-lg-9">
-                <!-- Hero Caption -->
-                <div class="hero__caption">
-                  <h1>Meter Blockchain Explorer</h1>
-                </div>
-
-                <!-- <div class="search-content">
-                  <SearchInput />
-                </div> -->
-               
-              </div>
-            </div>
-          </div>
+    <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <!-- Replace with your content -->
+      <div class="px-4 py-6 sm:px-0">
+        <div>
+          <Nuxt />
         </div>
       </div>
-      <!--Hero Area End-->
+      <!-- /End replace -->
+    </div>
+  </main>
 
-      <Nuxt />
-    </main>
     <Footer />
   </div>
 </template>
