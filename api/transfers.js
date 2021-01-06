@@ -1,5 +1,5 @@
-import { get } from "@/utils/request";
-
-export const getTransferRecent = () => {
-  return get("/transfers/recent");
-};
+export default ($axios) => (resource) => ({
+  recent() {
+    return $axios.$get(`${resource}/recent`);
+  },
+});

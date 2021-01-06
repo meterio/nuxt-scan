@@ -1,9 +1,14 @@
-import { get } from "@/utils/request";
+export default ($axios) => (resource) => ({
+  // Get recent pow blocks
+  recentBlocks() {
+    return $axios.$get(`${resource}/blocks/recent`);
+  },
 
-export const getPoWBlocksRecent = () => {
-  return get("/pow/blocks/recent");
-};
-
-export const getPoWReward = () => {
-  return get("/pow/blocks/rewards");
-};
+  //  Get mining rewards information
+  rewards({ page = 1, limit = 10 }) {
+    return $axios.$get(`${resource}/blocks/rewards`, {
+      page,
+      limit,
+    });
+  },
+});

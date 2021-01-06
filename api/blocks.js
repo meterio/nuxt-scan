@@ -1,9 +1,16 @@
-import { get } from "@/utils/request";
+export default ($axios) => (resource) => ({
+  // Get block, revision can be best, block number or block ID
+  getBlock(revesion) {
+    return $axios.$get(`${resource}/${revision}`);
+  },
 
-export const getBlocksRevision = ({ revision }) => {
-  return get("/blocks/" + revision);
-};
+  // Get block transactions
+  getTxs(blockId) {
+    return $axios.$get(`${resource}/${blockId}/txs`);
+  },
 
-export const getBlockTxs = ({ blockid }) => {
-  return get("/blocks/" + blockid + "/txs");
-};
+  // Get recent blocks
+  recent() {
+    return $axios.$get(`${resource}/recent`);
+  },
+});

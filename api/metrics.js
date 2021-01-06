@@ -1,17 +1,17 @@
-import { get } from "@/utils/request";
+export default ($axios) => (resource) => ({
+  all() {
+    return $axios.$get(`${resource}/all`);
+  },
 
-export const getAllMetrics = () => {
-  return get("/metrics/all");
-};
+  pow() {
+    return $axios.$get(`${resource}/pow`);
+  },
 
-export const getPoSMetrics = () => {
-  return get("/metrics/pos");
-};
+  pos() {
+    return $axios.$get(`${resource}/pos`);
+  },
 
-export const getPoWMetrics = () => {
-  return get("/metrics/pow");
-};
-
-export const getHeadMetrics = () => {
-  return get("/metrics/head");
-};
+  head() {
+    return $axios.$get(`${resource}/head`);
+  },
+});

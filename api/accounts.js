@@ -1,19 +1,19 @@
-import { get } from "@/utils/request";
+export default ($axios) => (resource) => ({
+  getAddress({ address }) {
+    return $axios.$get(`${resource}/${address}`);
+  },
 
-export const getAccount = ({ address }) => {
-  return get("/accounts/" + address);
-};
+  getAddressTxs({ address, page = 1, limit = 10 }) {
+    return $axios.$get(`${resource}/${address}/txs`, {
+      page,
+      limit,
+    });
+  },
 
-export const getAccountTxs = ({ address, page = 1, limit = 10 }) => {
-  return get("/accounts/" + address + "/txs", {
-    page,
-    limit,
-  });
-};
-
-export const getAccountTransfers = ({ address, page = 1, limit = 10 }) => {
-  return get("/accounts/" + address + "/transfers", {
-    page,
-    limit,
-  });
-};
+  getAddressTransfers({ address, page = 1, limit = 10 }) {
+    return $axios.$get(`${resource}/${address}/transfers`, {
+      page,
+      limit,
+    });
+  },
+});

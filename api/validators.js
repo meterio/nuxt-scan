@@ -1,26 +1,26 @@
-import { get } from "@/utils/request";
+export default ($axios) => (resource) => ({
+  count() {
+    return $axios.$get(`${resource}/count`);
+  },
 
-export const getValidatorsCount = () => {
-  return get("/validators/count");
-};
+  delegateList({ page = 1, limit = 10 }) {
+    return $axios.$get(`${resource}/delegate`, {
+      page,
+      limit,
+    });
+  },
 
-export const getValidatorsDelegate = ({ page, limit = 10 }) => {
-  return get("/validators/delegate", {
-    page,
-    limit,
-  });
-};
+  candidateList({ page = 1, limit = 10 }) {
+    return $axios.$get(`${resource}/candidate`, {
+      page,
+      limit,
+    });
+  },
 
-export const getValidatorsCandidate = ({ page, limit = 10 }) => {
-  return get("/validators/candidate", {
-    page,
-    limit,
-  });
-};
-
-export const getValidatorsJailed = ({ page, limit = 10 }) => {
-  return get("/validators/jailed", {
-    page,
-    limit,
-  });
-};
+  jailedList({ page = 1, limit = 10 }) {
+    return $axios.$get(`${resource}/jailed`, {
+      page,
+      limit,
+    });
+  },
+});

@@ -1,9 +1,9 @@
-import { get } from "@/utils/request";
+export default ($axios) => (resource) => ({
+  present() {
+    return $axios.$get(`${resource}/present`);
+  },
 
-export const getAuctionsPresent = () => {
-  return get("/auctions/present");
-};
-
-export const getAuctionsSumaries = () => {
-  return get("/auctions/summaries");
-};
+  summaries() {
+    return $axios.$get(`${resource}/summaries`);
+  },
+});

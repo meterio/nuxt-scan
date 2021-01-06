@@ -1,7 +1,15 @@
 <template>
 <div>
   <h1>Hello world!</h1>
-  <!-- <div>{{allMetrics.mtrg.price}}</div> -->
+  <div>{{ metrics && metrics.mtrg.price}}</div>
+
+  <ul>
+  <li v-for="item in recentBlocks" :key="item.hash">
+    {{ item.hash }}
+  </li>
+</ul>
+
+
   <div class="flex flex-col">
   <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -73,12 +81,23 @@
 
 <script>
 
-import { getAllMetrics } from '@/api/metrics';
-
 export default {
-  // async asyncData() {
-  //   const allMetrics = await getAllMetrics();
-  //   return { allMetrics };
-  // },
+  data() {
+    return {
+      metrics: null,
+      recentBlocks: []
+    }
+  },
+  async asyncData({ $metrics, $blocks }) {
+
+    let rcBlocksRes = await $blocks.recent();
+    rcBlocksRes = rcBlocksRes.blocks;
+
+    return { 
+      metrics: await $metrics.all(),
+      recentBlocks: rcBlocksRes
+      
+    };
+  },
 };
 </script>
